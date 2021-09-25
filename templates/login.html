@@ -1,0 +1,116 @@
+<html class="no-js css-menubar" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="bootstrap admin template">
+    <meta name="author" content="">
+    <title>Login | Your Business Name</title>
+    <link rel="apple-touch-icon" href="https://demo.apporioproducts.com/Apporiov19/public/theme/images/apple-touch-icon.png">
+    <link rel="shortcut icon" href="https://s3.ap-south-1.amazonaws.com/apporiotaxi-bucket/apporio-taxi/business_logo/1600773439_5f69dd3fafabe_business_logo.png">
+    
+    <link rel="stylesheet" href="https://demo.apporioproducts.com/Apporiov19/public/global/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://demo.apporioproducts.com/Apporiov19/public/global/css/bootstrap-extend.min.css">
+    <link rel="stylesheet" href="https://demo.apporioproducts.com/Apporiov19/public/theme/css/site.min.css">
+    
+    <link rel="stylesheet" href="https://demo.apporioproducts.com/Apporiov19/public/global/vendor/animsition/animsition.css">
+    <link rel="stylesheet" href="https://demo.apporioproducts.com/Apporiov19/public/global/vendor/asscrollable/asScrollable.css">
+    <link rel="stylesheet" href="https://demo.apporioproducts.com/Apporiov19/public/global/vendor/flag-icon-css/flag-icon.css">
+    <link rel="stylesheet" href="https://demo.apporioproducts.com/Apporiov19/public/theme/examples/css/pages/login.css">
+    
+    <link rel="stylesheet" href="https://demo.apporioproducts.com/Apporiov19/public/global/fonts/web-icons/web-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,300italic">
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/vendor/breakpoints/breakpoints.js"></script>
+    <script>
+        Breakpoints();
+      </script>
+    </head>
+    <body class="animsition page-login layout-full page-dark" data-new-gr-c-s-check-loaded="14.1029.0" data-gr-ext-installed="" style="animation-duration: 800ms; opacity: 1;" cz-shortcut-listen="true">
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="page vertical-align text-center" data-animsition-in="fade-in" data-animsition-out="fade-out">&gt;
+        <div class="page-content vertical-align-middle animation-slide-top animation-duration-1">
+        <div class="brand">
+            <img class="brand-img w-80 h-80" src="https://s3.ap-south-1.amazonaws.com/apporiotaxi-bucket/apporio-taxi/business_logo/1600773439_5f69dd3fafabe_business_logo.png" alt="...">
+            <h2 class="brand-text">Your Business Name</h2>
+        </div>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label class="sr-only" for="inputEmail">Email</label>
+                <input class="form-control" id="email" placeholder="Enter Email" autocomplete="off" name="email" type="text">
+            </div>
+            <div class="form-group">
+                <label class="sr-only" for="inputPassword">Password</label>
+                <input class="form-control" id="password" placeholder="Enter Password" autocomplete="off" name="password" type="password">
+            </div>
+            <div class="form-group clearfix">
+                <div class="checkbox-custom checkbox-inline checkbox-primary float-left">
+                    <input checked="checked" name="remember" type="checkbox" value="">
+                    <label for="inputCheckbox">Remember me</label>
+                </div>
+            </div>
+            {% if request.GET.next %}
+                <input type="hidden" name="next" value="{{request.GET.next}}" >
+            {% endif %}
+       
+            <input class="btn btn-primary btn-block" type="submit" value="Login">
+        </form>
+        <div class=" col-md-2 vertical-align-middle p-10" style="background-color: #3e8ef7; color:white; border-radius: 3px;">
+            <label>Username : taxidemo@gmail.com</label>
+            <br>
+            <label>Password : 12345678</label>
+        </div>
+        <footer class="page-copyright page-copyright-inverse">
+            <p>© 2021. All RIGHTS RESERVED.</p>
+        </footer>
+        </div>
+    </div>
+    
+    
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/vendor/babel-external-helpers/babel-external-helpers.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/vendor/jquery/jquery.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/vendor/popper-js/umd/popper.min.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/vendor/bootstrap/bootstrap.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/vendor/animsition/animsition.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/vendor/asscrollbar/jquery-asScrollbar.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/vendor/asscrollable/jquery-asScrollable.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/vendor/ashoverscroll/jquery-asHoverScroll.js"></script>
+    
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/vendor/screenfull/screenfull.js"></script>
+    
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/js/Component.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/js/Plugin.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/js/Base.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/js/Config.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/theme/js/Section/Menubar.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/theme/js/Section/GridMenu.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/theme/js/Section/Sidebar.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/theme/js/Plugin/menu.js"></script>
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/global/js/config/colors.js"></script>
+    
+    <script src="https://demo.apporioproducts.com/Apporiov19/public/theme/js/Site.js"></script>
+    <script>
+      (function(document, window, $){
+        'use strict';
+    
+        var Site = window.Site;
+        $(document).ready(function(){
+          Site.run();
+        });
+      })(document, window, jQuery);
+    </script>
+    <script type="text/javascript">
+        expires = new Date();
+        expires = new Date(new Date().getTime() + parseInt(expires) * 1000 * 60 * 60 * 24);
+        cookieexpire = expires.toGMTString();
+        cookiepath = "/";
+        document.cookie = "url=" + window.location.href + "; expires=" + cookieexpire + "; path=" + cookiepath;
+    </script>
+    
+    
+    </body>
+    <grammarly-desktop-integration data-grammarly-shadow-root="true">
+
+    </grammarly-desktop-integration>
+    </html>

@@ -1,0 +1,427 @@
+{% extends 'base/base.html' %}
+
+{% block title %} Website Home Contents {% endblock %}
+
+<div class="panel panel-bordered">
+    <header class="panel-heading">
+        <div class="panel-actions">
+            <a class="heading-elements-toggle"><i class="ft-ellipsis-h font-medium-3"></i></a>
+            <div class="heading-elements">
+                <ul class="list-inline mb-0">
+                    <li><a data-action="collapse"><i class="ft-minus"></i></a></li>
+                    <li><a data-action="reload"><i class="ft-rotate-cw"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <h3 class="panel-title">
+            <i class="fa-globe" aria-hidden="true"></i>
+            Website Home Contents
+        </h3>
+    </header>
+    <div class="panel-body container-fluid">
+        <section id="validation">
+            <form method="POST" class="steps-validation wizard-notification" enctype="multipart/form-data"
+                action="https://demo.apporioproducts.com/Apporiov19/public/merchant/admin/website-user-home-headings">
+                <input type="hidden" name="_token" value="c3pHuViOQPv3Zvt0uMin27IFWGOdTp2tK5wcQ04H">
+                <h5 class="form-section col-md-12"><i class="wb-add-file"></i> General </h5>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="app_logo">
+                                App Logo (512x512):
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="file" class="form-control" id="app_logo" name="app_logo"
+                                placeholder="App Logo">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="app_logo">
+                                Login background Image (1500x1000):
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="file" class="form-control" id="user_login_bg_image" name="user_login_bg_image"
+                                placeholder="Login background image">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="banner_image">
+                                Banner Image (1500x1000):
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="file" class="form-control" id="banner_image" name="banner_image"
+                                placeholder="Banner Image">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="start_address_hint">
+                                Start/Pickup Location :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="start_address_hint" name="start_address_hint"
+                                placeholder="Start/Pickup Location" value="sdfsdf" required="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="end_address_hint">
+                                End/Drop Location :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="end_address_hint" name="end_address_hint"
+                                placeholder="End/Drop Location" value="gfdgd" required="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="book_btn_title">
+                                Book Button Title :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="book_btn_title" name="book_btn_title"
+                                placeholder="Book Button Title" value="Select Tonfrofsdfs" required="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="book_btn_title">
+                                Estimate Button Title :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="estimate_btn_title" name="estimate_btn_title"
+                                placeholder="Book Button Title" value="title" required="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Left Image</label>
+                            <span class="text-danger">*</span>
+                            <input type="file" class="form-control" name="estimate_image">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="estimate_description">
+                                Estimate Description:
+                                <span class="text-danger">*</span>
+                            </label>
+                            <textarea class="form-control" maxlength="200" id="estimate_description"
+                                name="estimate_description" rows="3" placeholder="Package Description"
+                                required="">Estimate Description</textarea>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h5 class="form-section col-md-12"><i class="wb-add-file"></i> Features </h5>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="features_title[1]">
+                                Section One Title :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="features_title[1]" name="features[1][title]"
+                                placeholder="Book Button Title" value="Section One Title" required="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="features_description[1]">
+                                Section One Description:
+                                <span class="text-danger">*</span>
+                            </label>
+                            <textarea class="form-control" maxlength="200" id="features_description[1]"
+                                name="features[1][description]" rows="3" placeholder="Package Description"
+                                required="">Section One Description</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="features_title[2]">
+                                Section Two Title :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="features_title[2]" name="features[2][title]"
+                                placeholder="Book Button Title" value="Section Two Title" required="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="features_description[2]">
+                                Section Two Description:
+                                <span class="text-danger">*</span>
+                            </label>
+                            <textarea class="form-control" maxlength="200" id="features_description[1]"
+                                name="features[2][description]" rows="3" placeholder="Package Description"
+                                required="">Section Two Descriptionany time whenever you need reliable transportation solutions.</textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="features_title[3]">
+                                Section Three Title :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="features_title[3]" name="features[3][title]"
+                                placeholder="Book Button Title" value="Section Three Title" required="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="features_description[3]">
+                                Section Three Description:
+                                <span class="text-danger">*</span>
+                            </label>
+                            <textarea class="form-control" maxlength="200" id="features_description[2]"
+                                name="features[3][description]" rows="3" placeholder="Package Description"
+                                required="">Section Three Descriptionalways find a car available to you.</textarea>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h5 class="form-section col-md-12"><i class="wb-add-file"></i> Features Components </h5>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Main Image</label>
+                            <input type="file" class="form-control" name="featured_component_main_image">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="hidden" value="0" name="position[]">
+                            <label for="featre_compnt_image">
+                                Image (200 x 200) :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="file" class="form-control" id="featre_compnt_image"
+                                name="data[0][featre_compnt_image]" placeholder="App Component Image">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="app_title">
+                                Title :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="featre_compnt_title"
+                                name="data[0][featre_compnt_title]" placeholder="App Component Title"
+                                value="Request a Trip" required="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="app_description">
+                                Description :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" maxlength="200" class="form-control" id="featre_compnt_description"
+                                name="data[0][featre_compnt_description]" placeholder="App Component Description"
+                                value="Choose your pickup and drop off location/ and the trip type that meets your need"
+                                required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="hidden" value="1" name="position[]">
+                            <label for="featre_compnt_image">
+                                Image (200 x 200) :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="file" class="form-control" id="featre_compnt_image"
+                                name="data[1][featre_compnt_image]" placeholder="App Component Image">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="app_title">
+                                Title :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="featre_compnt_title"
+                                name="data[1][featre_compnt_title]" placeholder="App Component Title"
+                                value="Match with a driver" required="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="app_description">
+                                Description :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" maxlength="200" class="form-control" id="featre_compnt_description"
+                                name="data[1][featre_compnt_description]" placeholder="App Component Description"
+                                value="My ride will match you with the nearest available driver" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="hidden" value="2" name="position[]">
+                            <label for="featre_compnt_image">
+                                Image (200 x 200) :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="file" class="form-control" id="featre_compnt_image"
+                                name="data[2][featre_compnt_image]" placeholder="App Component Image">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="app_title">
+                                Title :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="featre_compnt_title"
+                                name="data[2][featre_compnt_title]" placeholder="App Component Title"
+                                value="Enjoy your Trip" required="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="app_description">
+                                Description :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" maxlength="200" class="form-control" id="featre_compnt_description"
+                                name="data[2][featre_compnt_description]" placeholder="App Component Description"
+                                value="Select vehicle type that suits your budget and needs" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="hidden" value="3" name="position[]">
+                            <label for="featre_compnt_image">
+                                Image (200 x 200) :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="file" class="form-control" id="featre_compnt_image"
+                                name="data[3][featre_compnt_image]" placeholder="App Component Image">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="app_title">
+                                Title :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="featre_compnt_title"
+                                name="data[3][featre_compnt_title]" placeholder="App Component Title" value="Pay"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="app_description">
+                                Description :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" maxlength="200" class="form-control" id="featre_compnt_description"
+                                name="data[3][featre_compnt_description]" placeholder="App Component Description"
+                                value="Pay in cash" required="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="hidden" value="4" name="position[]">
+                            <label for="featre_compnt_image">
+                                Image (200 x 200) :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="file" class="form-control" id="featre_compnt_image"
+                                name="data[4][featre_compnt_image]" placeholder="App Component Image">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="app_title">
+                                Title :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="featre_compnt_title"
+                                name="data[4][featre_compnt_title]" placeholder="App Component Title"
+                                value="Rate please your ride:" required="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="app_description">
+                                Description :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" maxlength="200" class="form-control" id="featre_compnt_description"
+                                name="data[4][featre_compnt_description]" placeholder="App Component Description"
+                                value="Rate if you are satisfied with your trip" required="">
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="android_link[1]">
+                                Android App Link :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="android_link" name="android_link"
+                                placeholder="Android App Link"
+                                value="https://play.google.com/store/apps/details?id=com.apporio.demotaxiapp&amp;hl=en"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="ios_link[1]">
+                                IOS App Link :
+                                <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="ios_link" name="ios_link"
+                                placeholder="IOS App Link"
+                                value="https://apps.apple.com/in/app/apporio-taxi/id1163580825" required="">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h5 class="form-section col-md-12"><i class="wb-add-file"></i> Driver footer </h5>
+                <hr>
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="form-group px-2">
+                            <label>Background Color :</label>
+                            <input type="color" class="form-control" name="footer_bg_color" value="#1fc7ff">
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-group px-2">
+                            <label> Text Color :</label>
+                            <input type="color" class="form-control" name="footer_text_color" value="#ff0037">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions float-right">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fa fa-check-square-o"></i> Save </button>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
